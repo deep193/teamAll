@@ -1,5 +1,5 @@
 
-Steps to run the tes:
+Steps to run the tests:
 
 pre-requisites:
 Tests will run on Firefox browser on a mac machine.
