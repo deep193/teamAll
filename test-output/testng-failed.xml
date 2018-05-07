@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [branch_team_tests]">
+  <test name="Branch Team Tests Suite (failed)">
     <classes>
-      <class name="com.branch.testproject.GoogleHomePageTest">
+      <class name="com.branch.testproject.BranchEmployeeInfoTests">
         <methods>
           <include name="openBrowser"/>
+          <include name="testEmployeeNamesAllandOtherDepartments"/>
           <include name="closeBrowser"/>
-          <include name="testGoogleSearchBar"/>
-          <include name="navigateBranchTeam"/>
+          <include name="testEmployeesAboutInTeamAll"/>
+          <include name="testEmployeesCountAllandOtherDepartments"/>
         </methods>
-      </class> <!-- com.branch.testproject.GoogleHomePageTest -->
+      </class> <!-- com.branch.testproject.BranchEmployeeInfoTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Branch Team Tests Suite (failed) -->
+</suite> <!-- Failed suite [branch_team_tests] -->

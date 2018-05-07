@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="branch_team_tests" parallel="false">
+	
+	<test name="Branch Team Tests Suite " verbose="2" enabled="true">
+    	<classes>
+      		<class name="com.branch.testproject.BranchEmployeeInfoTests">
+       			<methods>
+       				<include name="testGoogleSearchAndNavigateToBranch"/>
+       				<include name="testNavigateBranchTeam"/>
+       				<include name="testEmployeesCountAllandOtherDepartments"/>
+       				<include name="testEmployeeNamesAllandOtherDepartments"/>
+       				<include name="testEmployeesDepartmentsAllGroups"/>
+       				<include name="testEmployeesAboutInTeamAll"/>
+       				<include name="testImageExistsForAllEmployees"/>
+       			</methods>
+      		</class>
+    	</classes>
+  	</test>
+</suite>

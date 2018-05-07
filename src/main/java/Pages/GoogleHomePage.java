@@ -21,32 +21,27 @@ public class GoogleHomePage {
 
 	@FindBy(xpath="//input[@value='Google Search']")
 	public WebElement googleSearchButton;
- 
-	
+
+
 	@FindBy(xpath="//*[@id='rso']//h3/a")
 	public List<WebElement> searchResultLinks;
 
+	//Navigate to google search bar and type "branch"
 
-
-//Navigate to google search bar and type "branch"
-	
 	public void searchInGoogle(String searchText)
 	{
-		
 		googleSearchField.sendKeys(searchText);
 		googleSearchField.submit();
 	}
 
-	public BranchHomePage clickExpectedLink() {
-		
-        // To make sure page is loaded completely
+	public BranchHomePage clickBranchLink() {
+
 		WebElement myDynamicElement = (new WebDriverWait(driver, 10))
 				.until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
 
-		// this are all the links you like to visit
 		for (WebElement webElement : searchResultLinks)
 		{
-			System.out.println(webElement.getAttribute("href"));
+//			System.out.println(webElement.getAttribute("href"));
 			String expectedUrl = "https://branch.io/";
 			String currUrl = webElement.getAttribute("href");
 			if (currUrl.equals(expectedUrl)) {

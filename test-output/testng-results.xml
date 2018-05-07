@@ -1,29 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" total="7" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="141235" started-at="2018-05-05T17:22:47Z" finished-at="2018-05-05T17:25:08Z">
+  <suite name="branch_team_tests" duration-ms="69071" started-at="2018-05-07T20:25:49Z" finished-at="2018-05-07T20:26:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="141235" started-at="2018-05-05T17:22:47Z" finished-at="2018-05-05T17:25:08Z">
-      <class name="com.branch.testproject.GoogleHomePageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.branch.testproject.GoogleHomePageTest@7ce3cb8e]" name="openBrowser" is-config="true" duration-ms="4805" started-at="2018-05-05T10:22:47Z" finished-at="2018-05-05T10:22:52Z">
+    <test name="Branch Team Tests Suite " duration-ms="69071" started-at="2018-05-07T20:25:49Z" finished-at="2018-05-07T20:26:58Z">
+      <class name="com.branch.testproject.BranchEmployeeInfoTests">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="openBrowser" is-config="true" duration-ms="3070" started-at="2018-05-07T13:25:49Z" finished-at="2018-05-07T13:25:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testGoogleSearchBar()[pri:0, instance:com.branch.testproject.GoogleHomePageTest@7ce3cb8e]" name="testGoogleSearchBar" duration-ms="63121" started-at="2018-05-05T10:22:52Z" finished-at="2018-05-05T10:23:55Z">
+        <test-method status="PASS" signature="testGoogleSearchAndNavigateToBranch()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testGoogleSearchAndNavigateToBranch" duration-ms="6285" started-at="2018-05-07T13:25:52Z" finished-at="2018-05-07T13:25:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGoogleSearchBar -->
-        <test-method status="PASS" signature="navigateBranchTeam()[pri:0, instance:com.branch.testproject.GoogleHomePageTest@7ce3cb8e]" name="navigateBranchTeam" duration-ms="45481" started-at="2018-05-05T10:24:02Z" finished-at="2018-05-05T10:24:47Z">
+        </test-method> <!-- testGoogleSearchAndNavigateToBranch -->
+        <test-method status="PASS" signature="testNavigateBranchTeam()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testNavigateBranchTeam" duration-ms="912" started-at="2018-05-07T13:25:59Z" finished-at="2018-05-07T13:26:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateBranchTeam -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.branch.testproject.GoogleHomePageTest@7ce3cb8e]" name="closeBrowser" is-config="true" duration-ms="419" started-at="2018-05-05T10:25:08Z" finished-at="2018-05-05T10:25:08Z">
+        </test-method> <!-- testNavigateBranchTeam -->
+        <test-method status="FAIL" signature="testEmployeesCountAllandOtherDepartments()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testEmployeesCountAllandOtherDepartments" duration-ms="9457" started-at="2018-05-07T13:26:00Z" finished-at="2018-05-07T13:26:09Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[FAIL: All employees and sum of employees of all teams doesn't match expected:<129> but was:<125>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: FAIL: All employees and sum of employees of all teams doesn't match expected:<129> but was:<125>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeesCountAllandOtherDepartments(BranchEmployeeInfoTests.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmployeesCountAllandOtherDepartments -->
+        <test-method status="FAIL" signature="testEmployeeNamesAllandOtherDepartments()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testEmployeeNamesAllandOtherDepartments" duration-ms="8165" started-at="2018-05-07T13:26:09Z" finished-at="2018-05-07T13:26:17Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[FAIL: employee names doesn't match in All and other departments. Details: [YEN HOANG, VATSAL BAJPAI, AMANDA GRADY, AMANDA VANDIVER]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: FAIL: employee names doesn't match in All and other departments. Details: [YEN HOANG, VATSAL BAJPAI, AMANDA GRADY, AMANDA VANDIVER]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeeNamesAllandOtherDepartments(BranchEmployeeInfoTests.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmployeeNamesAllandOtherDepartments -->
+        <test-method status="PASS" signature="testEmployeesDepartmentsAllGroups()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testEmployeesDepartmentsAllGroups" duration-ms="8133" started-at="2018-05-07T13:26:17Z" finished-at="2018-05-07T13:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmployeesDepartmentsAllGroups -->
+        <test-method status="FAIL" signature="testEmployeesAboutInTeamAll()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testEmployeesAboutInTeamAll" duration-ms="15350" started-at="2018-05-07T13:26:25Z" finished-at="2018-05-07T13:26:41Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[FAIL: Employees doesn't have About text:[RYAN CHURAMAN, FELIX VIALVA, GABRIELLE SALGADO, BRIAN KRING, BARRY KEANE, AMANDA GRADY, JONAS BAUER, DEVASMITHA REDDY, YURY USTSINCHYK, JUAN ANDRADE, XIAN CHEN] expected:<0> but was:<11>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: FAIL: Employees doesn't have About text:[RYAN CHURAMAN, FELIX VIALVA, GABRIELLE SALGADO, BRIAN KRING, BARRY KEANE, AMANDA GRADY, JONAS BAUER, DEVASMITHA REDDY, YURY USTSINCHYK, JUAN ANDRADE, XIAN CHEN] expected:<0> but was:<11>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeesAboutInTeamAll(BranchEmployeeInfoTests.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmployeesAboutInTeamAll -->
+        <test-method status="PASS" signature="testImageExistsForAllEmployees()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="testImageExistsForAllEmployees" duration-ms="16954" started-at="2018-05-07T13:26:41Z" finished-at="2018-05-07T13:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImageExistsForAllEmployees -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.branch.testproject.BranchEmployeeInfoTests@2f7c7260]" name="closeBrowser" is-config="true" duration-ms="729" started-at="2018-05-07T13:26:58Z" finished-at="2018-05-07T13:26:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.branch.testproject.GoogleHomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.branch.testproject.BranchEmployeeInfoTests -->
+    </test> <!-- Branch Team Tests Suite  -->
+  </suite> <!-- branch_team_tests -->
 </testng-results>

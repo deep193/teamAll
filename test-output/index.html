@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-branch_team_tests">
+              <span class="suite-name border-failed">branch_team_tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-branch_team_tests">
+                    <span>branch_team_tests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-branch_team_tests">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-branch_team_tests">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-branch_team_tests">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-branch_team_tests">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-branch_team_tests">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-branch_team_tests">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,26 +90,60 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-branch_team_tests" class="hide-methods failed suite-branch_team_tests"> (hide)</a> <!-- hide-methods failed suite-branch_team_tests -->
+                      <a href="#" panel-name="suite-branch_team_tests" class="show-methods failed suite-branch_team_tests"> (show)</a> <!-- show-methods failed suite-branch_team_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-branch_team_tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testEmployeeNamesAllandOtherDepartments">testEmployeeNamesAllandOtherDepartments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testEmployeesAboutInTeamAll">testEmployeesAboutInTeamAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testEmployeesCountAllandOtherDepartments">testEmployeesCountAllandOtherDepartments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-branch_team_tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-branch_team_tests" class="hide-methods passed suite-branch_team_tests"> (hide)</a> <!-- hide-methods passed suite-branch_team_tests -->
+                      <a href="#" panel-name="suite-branch_team_tests" class="show-methods passed suite-branch_team_tests"> (show)</a> <!-- show-methods passed suite-branch_team_tests -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-branch_team_tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.branch.testproject.GoogleHomePageTest" hash-for-method="navigateBranchTeam">navigateBranchTeam</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testEmployeesDepartmentsAllGroups">testEmployeesDepartmentsAllGroups</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.branch.testproject.GoogleHomePageTest" hash-for-method="testGoogleSearchBar">testGoogleSearchBar</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testGoogleSearchAndNavigateToBranch">testGoogleSearchAndNavigateToBranch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testImageExistsForAllEmployees">testImageExistsForAllEmployees</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-branch_team_tests" title="com.branch.testproject.BranchEmployeeInfoTests" hash-for-method="testNavigateBranchTeam">testNavigateBranchTeam</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-branch_team_tests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -120,136 +154,329 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-branch_team_tests" class="panel branch_team_tests">
+          <div class="suite-branch_team_tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.branch.testproject.GoogleHomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.branch.testproject.BranchEmployeeInfoTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="navigateBranchTeam">
-                  </a> <!-- navigateBranchTeam -->
-                  <span class="method-name">navigateBranchTeam</span>
+                  <a name="testEmployeeNamesAllandOtherDepartments">
+                  </a> <!-- testEmployeeNamesAllandOtherDepartments -->
+                  <span class="method-name">testEmployeeNamesAllandOtherDepartments</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: FAIL: employee names doesn&apos;t match in All and other departments. Details: [YEN HOANG, VATSAL BAJPAI, AMANDA GRADY, AMANDA VANDIVER]
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeeNamesAllandOtherDepartments(BranchEmployeeInfoTests.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testGoogleSearchBar">
-                  </a> <!-- testGoogleSearchBar -->
-                  <span class="method-name">testGoogleSearchBar</span>
+                  <a name="testEmployeesAboutInTeamAll">
+                  </a> <!-- testEmployeesAboutInTeamAll -->
+                  <span class="method-name">testEmployeesAboutInTeamAll</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: FAIL: Employees doesn&apos;t have About text:[RYAN CHURAMAN, FELIX VIALVA, GABRIELLE SALGADO, BRIAN KRING, BARRY KEANE, AMANDA GRADY, JONAS BAUER, DEVASMITHA REDDY, YURY USTSINCHYK, JUAN ANDRADE, XIAN CHEN] expected:&lt;0&gt; but was:&lt;11&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeesAboutInTeamAll(BranchEmployeeInfoTests.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmployeesCountAllandOtherDepartments">
+                  </a> <!-- testEmployeesCountAllandOtherDepartments -->
+                  <span class="method-name">testEmployeesCountAllandOtherDepartments</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: FAIL: All employees and sum of employees of all teams doesn&apos;t match expected:&lt;129&gt; but was:&lt;125&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.branch.testproject.BranchEmployeeInfoTests.testEmployeesCountAllandOtherDepartments(BranchEmployeeInfoTests.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-branch_team_tests-class-failed -->
+          <div class="suite-branch_team_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.branch.testproject.BranchEmployeeInfoTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmployeesDepartmentsAllGroups">
+                  </a> <!-- testEmployeesDepartmentsAllGroups -->
+                  <span class="method-name">testEmployeesDepartmentsAllGroups</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoogleSearchAndNavigateToBranch">
+                  </a> <!-- testGoogleSearchAndNavigateToBranch -->
+                  <span class="method-name">testGoogleSearchAndNavigateToBranch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testImageExistsForAllEmployees">
+                  </a> <!-- testImageExistsForAllEmployees -->
+                  <span class="method-name">testImageExistsForAllEmployees</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigateBranchTeam">
+                  </a> <!-- testNavigateBranchTeam -->
+                  <span class="method-name">testNavigateBranchTeam</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-branch_team_tests-class-passed -->
+        </div> <!-- panel branch_team_tests -->
+        <div panel-name="test-xml-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/gq/4y0qlnc560s76fgkrjmt2ycsywlr2y/T/testng-eclipse-39166750/testng-customsuite.xml</span>
+            <span class="header-content">/Users/Shared/Learning/selenium/teamAll/src/test/resources/test-suites/branch_team_tests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite name=&quot;branch_team_tests&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Branch Team Tests Suite &quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.branch.testproject.GoogleHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.branch.testproject.BranchEmployeeInfoTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testGoogleSearchAndNavigateToBranch&quot;/&gt;
+          &lt;include name=&quot;testNavigateBranchTeam&quot;/&gt;
+          &lt;include name=&quot;testEmployeesCountAllandOtherDepartments&quot;/&gt;
+          &lt;include name=&quot;testEmployeeNamesAllandOtherDepartments&quot;/&gt;
+          &lt;include name=&quot;testEmployeesDepartmentsAllGroups&quot;/&gt;
+          &lt;include name=&quot;testEmployeesAboutInTeamAll&quot;/&gt;
+          &lt;include name=&quot;testImageExistsForAllEmployees&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.branch.testproject.BranchEmployeeInfoTests --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Branch Team Tests Suite  --&gt;
+&lt;/suite&gt; &lt;!-- branch_team_tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for branch_team_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Branch Team Tests Suite  (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for branch_team_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for branch_team_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_branch_team_tests');
+function tableData_branch_team_tests() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGoogleSearchBar')
-data.setCell(0, 2, 'com.branch.testproject.GoogleHomePageTest')
-data.setCell(0, 3, 63121);
+data.setCell(0, 1, 'testImageExistsForAllEmployees')
+data.setCell(0, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(0, 3, 16954);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigateBranchTeam')
-data.setCell(1, 2, 'com.branch.testproject.GoogleHomePageTest')
-data.setCell(1, 3, 45481);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'testEmployeesAboutInTeamAll')
+data.setCell(1, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(1, 3, 15350);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEmployeesCountAllandOtherDepartments')
+data.setCell(2, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(2, 3, 9457);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testEmployeeNamesAllandOtherDepartments')
+data.setCell(3, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(3, 3, 8165);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testEmployeesDepartmentsAllGroups')
+data.setCell(4, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(4, 3, 8133);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGoogleSearchAndNavigateToBranch')
+data.setCell(5, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(5, 3, 6285);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testNavigateBranchTeam')
+data.setCell(6, 2, 'com.branch.testproject.BranchEmployeeInfoTests')
+data.setCell(6, 3, 912);
+window.suiteTableData['branch_team_tests']= { tableData: data, tableDiv: 'times-div-branch_team_tests'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <div id="times-div-branch_team_tests">
+              </div> <!-- times-div-branch_team_tests -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for branch_team_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-branch_team_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.branch.testproject.GoogleHomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.branch.testproject.BranchEmployeeInfoTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testGoogleSearchBar</span>
-                <span class="method-start">4809 ms</span>
+                <span class="method-name">testGoogleSearchAndNavigateToBranch</span>
+                <span class="method-start">3072 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">navigateBranchTeam</span>
-                <span class="method-start">74620 ms</span>
+                <span class="method-name">testNavigateBranchTeam</span>
+                <span class="method-start">9361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmployeesCountAllandOtherDepartments</span>
+                <span class="method-start">10273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmployeeNamesAllandOtherDepartments</span>
+                <span class="method-start">19731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmployeesDepartmentsAllGroups</span>
+                <span class="method-start">27897 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmployeesAboutInTeamAll</span>
+                <span class="method-start">36030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testImageExistsForAllEmployees</span>
+                <span class="method-start">51381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">140803 ms</span>
+                <span class="method-start">68335 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
